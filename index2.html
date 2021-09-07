@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Conversor</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            text-align: center;
+            background-color: #acb3bf;     
+        }
+        textarea{
+            width: 80%;
+            height: 300px;
+            font-size: 30px;
+            border: 5px solid  #191a1c;
+
+        }
+        button{
+            margin-top: 10px;
+            color:white;
+            font-size: 30px;
+            padding: 5px 50px;
+            background-color: #191a1c; 
+        }
+     
+        a{
+            text-decoration: none;
+            color: tomato;
+        }
+        a:hover{
+            
+            color: white;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h2><a href="http://converteasy.com.br/">Voltar</a></h2>
+    <div class="header">
+        
+    </div>
+    <h1>Conversor para Letras Maiúsculas</h1>
+    <textarea id="convert"></textarea>
+    <br>
+    <button id="button" onclick="maiuscula()">Maiúscula</button>
+    <button id="button" onclick="minuscula()">Minúscula</button>
+    <div class="fim">
+    <pre>Created By: <a href="https://www.instagram.com/socaiq/">Caique Mendes</a></pre>
+</div>
+  
+    
+    <script>
+        function maiuscula() {
+            let inp = document.getElementById("convert").value.toUpperCase();
+            document.getElementById("convert").value = inp;
+        }
+        function minuscula(){
+            let low = document.getElementById("convert").value.toLowerCase();
+            document.getElementById("convert").value =low;
+           
+        }
+        
+
+
+
+
+
+    </script>
+</body>
+
+</html>

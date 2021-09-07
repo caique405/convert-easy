@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conversor</title>
+    <style>
+        body{
+            margin: 10px;
+            background-color:white;
+        }
+        #header {
+            padding: 30px;
+            height: auto;
+            background-color: teal;
+            
+          
+        }
+
+        #logo {
+            text-decoration: none;
+            color: white;
+            font-size: 70px;
+            margin: 0;
+            display: inline-block;
+            
+        }
+        #logo2 {
+            text-decoration: none;
+            color: black;
+            font-size: 70px;
+            margin: 0;
+            display: inline-block;
+            
+        }
+        #tituloconversor{
+            margin: 0;
+        }
+
+        .corpo {
+            text-align: center;
+            float: right;
+            width: 80%;
+            height: 450px;
+            background-color: white;
+        }
+        
+        .menu{
+            text-align: center;
+            background-color: teal;
+            float: left;
+            width: 20%;
+            height: 450px;
+            border-radius: 10px;
+            margin-top:5px;
+           
+        }
+       
+        #convert{
+            height: 300px;
+            width: 50%;
+            font-size: 30px;
+            
+        }
+        a{
+            
+            text-decoration: none;
+            color: tomato;
+        }
+        a:hover{
+            
+            color: white;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header">
+        <h1 id="logo">Convert</h1> <h1 id="logo2">Easy</h1>
+    </header>
+
+    <div class="menu">
+        <h2 class="textmenu"><a href="http://converteasy.com.br/">HOME</a></h2>
+        <h2 class="textmenu"><a href="index2.html">ANTES</a></h2>
+
+    </div>
+
+    <div class="corpo">
+        <h1 id="tituloconversor">Conversor para Letras Maiúsculas</h1>
+        <textarea id="convert" title="Digite seu texto" placeholder="Digite seu texto"></textarea>
+        <br>
+        <button class="button" onclick="maiuscula()">Maiúscula</button>
+        <button class="button" onclick="minuscula()">Minúscula</button>
+        <button class="button" onclick="bold()">Negrito</button>
+        <button class="button" onclick="boldvolta()">Sem negrito</button>
+        <pre>Created By: <a href="https://www.instagram.com/socaiq/">Caique Mendes</a></pre>
+    </div>
+    
+
+
+
+    <script>
+        function maiuscula() {
+            let inp = document.getElementById("convert").value.toUpperCase();
+            document.getElementById("convert").value = inp;
+        }
+        function minuscula() {
+            let low = document.getElementById("convert").value.toLowerCase();
+            document.getElementById("convert").value = low;
+
+        }
+        function bold() {
+           let bold = document.getElementById("convert").style.fontWeight="900";
+        }
+        function boldvolta() {
+           let bold = document.getElementById("convert").style.fontWeight="400";
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
